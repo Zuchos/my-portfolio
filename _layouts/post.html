@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div id="post" class="col-lg-12">
+    <div class="col-lg-10 col-lg-offset-1">
+
+        <header class="post-header">
+            <h1>{{ page.title }}&nbsp;{{ page.date | date: "%b %-d, %Y" }}</h1>
+
+            <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}
+                {% if page.meta %} • {{ page.meta }}{% endif %}</p>
+        </header>
+
+        <article class="post-content">
+            {{ content }}
+        </article>
+    </div>
+</div>
